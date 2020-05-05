@@ -31,7 +31,13 @@ export default class MyDocument extends Document {
     console.log("document");
     return (
       <Html>
-        <Head />
+        <Head>
+          <script
+            data-ad-client="ca-pub-4085111800731756"
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          ></script>
+        </Head>
         <body>
           <Main />
           <NextScript />
