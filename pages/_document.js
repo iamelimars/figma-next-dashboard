@@ -37,6 +37,7 @@ export default class MyDocument extends Document {
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
           ></script>
+          <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
         </Head>
         <body>
           <Main />
