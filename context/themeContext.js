@@ -1,4 +1,6 @@
 import React, { createContext, useState, useContext } from "react";
+import { lightTheme, darkTheme } from "../styles/theme";
+import { ThemeProvider } from "styled-components";
 
 export const ThemeContext = createContext({ theme: "light" });
 
@@ -32,7 +34,9 @@ export const ThemeContextProvider = ({ children }) => {
         openDepositModal,
       }}
     >
-      {children}
+      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+        {children}
+      </ThemeProvider>
     </ThemeContext.Provider>
   );
 };
